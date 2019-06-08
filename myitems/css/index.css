@@ -17,9 +17,7 @@ a {
     color: black;
 }
 
-a:hover {
-    color: #fb1116;
-}
+
 
 i,
 em {
@@ -195,14 +193,20 @@ h1 {
 }
 
 .top-list {
+    display: block;
     /* background-color: aquamarine; */
     position: absolute;
     top: 253px;
     height: 33px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .top-list .top-list1 {
-    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 501px;
 }
 
 .top-list .top-list1 .top-listtest {
@@ -216,8 +220,11 @@ h1 {
 }
 
 .top-list .top-list2 {
-    float: left;
-    margin-left: 60px;
+    position: absolute;
+    top: 0px;
+    left: 270px;
+    display: flex;
+
 }
 
 .top-list .top-list2>li {
@@ -228,7 +235,8 @@ h1 {
 
 .top-list .top-list2>li a {
     display: inline-block;
-    width: 84px;
+    width: 80px;
+    /* padding: 0 10px 0 20px; */
     height: 33px;
     font-size: 12px;
     line-height: 33px;
@@ -237,8 +245,7 @@ h1 {
 
 .top-list1>ul {
     width: 196px;
-    /* height: 53px; */
-    /* background-color:#ecec;  */
+
     padding-top: 10px;
 
 }
@@ -268,13 +275,15 @@ h1 {
     color: #999;
     height: 21px;
     overflow: hidden;
+    /* background-color: #ef3f3b; */
 }
 
 
 /* ------------------------ */
-/* .top-list1>ul{
+/* .top-list1>ul li .nav_right {
     display: none;
 } */
+
 /* -------------------------- */
 .top-list1>ul>li .nav_right {
     width: 800px;
@@ -284,10 +293,22 @@ h1 {
     top: -12px;
     line-height: 150%;
     background: #FFFFFF;
-    /* display: none; */
+    display: none;
     padding: 10px 0px;
     border-left: 1px solid #eee;
-    z-index: 10;
+    z-index: 100000;
+
+}
+
+
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+
 }
 
 .nav_right dt {
@@ -337,6 +358,14 @@ h1 {
     border-left: 1px solid #E3E3E3;
 }
 
+.t-text li a {
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 25px;
+    padding: 0 10px;
+    color: #5a5a5a;
+}
 
 /* "-------------轮播图-------------------" */
 .banner {
@@ -817,4 +846,9 @@ h1 {
     /* display: inline-block; */
     text-align: center;
     color: #b299a6;
+}
+
+/* ---------------a:hover------------ */
+a:hover {
+    color: #fb1116;
 }
