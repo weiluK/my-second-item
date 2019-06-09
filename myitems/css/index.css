@@ -386,7 +386,14 @@ h1 {
     width: 799px;
     height: 468px;
     z-index: -1;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.banner-center img {
+    position: absolute;
+    top: 0px;
+    left: -196px;
+    height: 100%;
 }
 
 .nav-right {
@@ -804,9 +811,7 @@ h1 {
     height: 31px;
 }
 
-.f {
-    border-style: none;
-}
+
 
 .t-menu .m a {
 
@@ -817,6 +822,10 @@ h1 {
     padding: 0 12px;
     text-align: center;
     border-left: 1px solid #ccc;
+}
+
+.t-menu .m a:nth-child(1) {
+    border-style: none;
 }
 
 .l {
