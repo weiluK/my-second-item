@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+i,
+em {
+    font-style: normal;
+}
+
+.box {
+    /* width: 1349px; */
+    /* height: 10735px; */
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+}
+
+.content {
+    width: 1198px;
+    height: 100%;
+    /* background-color: tan; */
+    margin: 0 auto;
+
+}
+
+.top-list1>ul {
+    display: none;
+}
+
+/* ----------------------main-------------------- */
+.main-list {
+    width: 100%;
+    height: 2703px;
+
+}
+
+.ttop-list {
+    float: left;
+    width: 100%;
+    height: 32px;
+
+}
+
+.ttop-list .tl {
+    float: left;
+    font-size: 12px;
+    line-height: 32px;
+    margin-top: 6px;
+    color: #888888;
+}
+
+.ttop-list>ul {
+    float: left;
+    margin-left: 115px;
+}
+
+.ttop-list>ul li {
+    float: left;
+    background-color: #efefef;
+    margin-right: 1px;
+}
+
+.ttop-list>ul>li a {
+    display: inline-block;
+    width: 113px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    padding-left: 12px;
+    float: left;
+}
+
+.ttop-list>ul>li span {
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    line-height: 32px;
+    transform: rotateZ(90deg);
+    padding-top: 8px;
+}
+
+.left-list {
+    width: 210px;
+    height: 100%;
+
+    float: left;
+}
+
+.shuiguo {
+    width: 168px;
+    height: 33px;
+    border-bottom: 1px solid #77b10c;
+    font-size: 23px;
+    line-height: 23px;
+    margin-top: 23px;
+    color: #77b10c;
+
+}
+
+.class-selec {
+    width: calc(100% - 210px);
+    float: left;
+    height: 197px;
+    margin-top: 30px;
+
+}
+
+.left-list>dl dt span {
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    background-image: url(../images/list-img/sanguo.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 13px;
+    left: 0px;
+}
+
+.left-list>dl dt {
+    font: size 12px;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 20px;
+    width: 148px;
+    position: relative;
+}
+
+.left-list>dl>div dd {
+    font-size: 11px;
+    line-height: 26px;
+    height: 26px;
+    width: 148px;
+    padding-left: 20px;
+    color: #666666;
+}
+
+.class-selec ul {
+    height: 35px;
+    width: 1221px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-selec>ul>li {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    border-bottom: 1px dotted #b3b3b3;
+}
+
+.class-selec .lm {
+    width: 100%;
+    height: 65px;
+    font-size: 11px;
+    color: #a6bfdf;
+    text-align: center;
+    line-height: 11px;
+    margin-top: 21px;
+    background-image: url(../images/list-img/down.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+
+}

@@ -1,0 +1,331 @@
+/* "-------------头部-------------------" */
+.header {
+    width: 100%;
+    height: 283px;
+    /* background-color: blueviolet; */
+}
+
+.header>.content {
+    /* width: 1349px; */
+    height: 100%;
+    /* background-color: tan; */
+    /* margin: 0 auto; */
+    position: relative;
+}
+
+.top-title {
+    width: 100%;
+    height: 31px;
+    /* background-color: aqua; */
+}
+
+.header>.content .top-title span {
+    font-size: 11px;
+    line-height: 31px;
+    color: #c5bbce;
+}
+
+.header>.content .top-title span:nth-child(2) {
+    color: black;
+
+}
+
+.header>.content .top-title>ul {
+    float: right;
+}
+
+.header>.content .top-title>ul>li {
+    float: left;
+    border-right: 1px solid #eeeeee;
+}
+
+.header>.content .top-title>ul>li a {
+    font-size: 11px;
+    padding: 0 10px 0 14px;
+    line-height: 31px;
+}
+
+.header>.content .top-title>ul>li:nth-child(4) {
+    border-style: none;
+}
+
+.header>.content>.imgb {
+    position: absolute;
+    left: -115px;
+    width: 1349px;
+    height: 120px;
+    /* overflow: hidden; */
+    /* background-color: blueviolet; */
+}
+
+.header>.content>.imgb img {
+    position: absolute;
+    left: -243px;
+}
+
+.top-search {
+    position: absolute;
+    top: 151px;
+    height: 102px;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.top-search .log {
+    display: inline-block;
+    float: left;
+}
+
+h1 {
+    text-indent: -999px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.top-search>form {
+    display: inline-block;
+    float: left;
+    margin-left: 81px;
+    margin-top: 6px;
+    position: relative;
+}
+
+.top-search>form input {
+    width: 443px;
+    height: 30px;
+}
+
+.top-search>form>span {
+    display: inline-block;
+    width: 76px;
+    height: 34px;
+    background-color: #fb1116;
+    position: absolute;
+    left: 442px;
+    top: 0px;
+    font-size: 12px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.my-car {
+    margin-left: 891px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.my-car>span:nth-child(1) {
+    position: absolute;
+    font-size: 11px;
+    background-color: #fb1116;
+    color: wheat;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+}
+
+.my-car>span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: centerl;
+}
+
+.top-link {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+}
+
+.top-link>span {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    line-height: 31px;
+}
+
+.top-list {
+    display: block;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 253px;
+    height: 33px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-list .top-list1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 501px;
+}
+
+.top-list .top-list1 .top-listtest {
+    display: inline-block;
+    width: 176px;
+    height: 32px;
+    background-color: #fb1116;
+    font-size: 12px;
+    line-height: 32px;
+    padding-left: 20px;
+}
+
+.top-list .top-list2 {
+    position: absolute;
+    top: 0px;
+    left: 270px;
+    display: flex;
+
+}
+
+.top-list .top-list2>li {
+    float: left;
+    /* width: 54px;
+    height: 100%; */
+}
+
+.top-list .top-list2>li a {
+    display: inline-block;
+    width: 80px;
+    /* padding: 0 10px 0 20px; */
+    height: 33px;
+    font-size: 12px;
+    line-height: 33px;
+    text-align: center;
+}
+
+
+
+.top-list1>ul {
+    width: 196px;
+    padding-top: 10px;
+    background-color: #ffffff;
+}
+
+.top-list1>ul>li {
+    width: 196px;
+    height: 51px;
+    position: relative;
+    /* margin-left: 13px; */
+    padding-left: 13px;
+}
+
+
+
+.top-list1>ul>li>span>a {
+    display: block;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.top-list1>ul>li>span>p a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 21px;
+    color: #888;
+}
+
+.top-list1>ul>li>span p {
+    font-size: 11px;
+    color: #999;
+    height: 21px;
+    overflow: hidden;
+    /* background-color: #ef3f3b; */
+}
+
+
+/* ------------------------ */
+/* .top-list1>ul li .nav_right {
+    display: none;
+} */
+
+/* -------------------------- */
+.top-list1>ul>li .nav_right {
+    width: 800px;
+    height: 449px;
+    position: absolute;
+    margin-left: 183px;
+    top: -12px;
+    line-height: 150%;
+    background: #FFFFFF;
+    display: none;
+    padding: 10px 0px;
+    border-left: 1px solid #eee;
+    z-index: 100000;
+
+}
+
+
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+
+}
+
+.nav_right dt {
+    width: 120px;
+    float: left;
+    display: block;
+    position: relative;
+    clear: left;
+}
+
+.nav_right dt a {
+    font-size: 13px;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_right dt a i {
+    font-size: 12px;
+    font-style: normal;
+    float: right;
+}
+
+.nav_right dd {
+    width: 460px;
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px 5px 0;
+    border-bottom: 1px dashed #E3E3E3;
+    line-height: 150%;
+}
+
+.nav_right dd a {
+    font-size: 12px;
+    float: left;
+    color: #666;
+    padding: 0 10px;
+    margin: 4px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 120%;
+    border-left: 1px solid #E3E3E3;
+}
+
+.t-text li a {
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 25px;
+    padding: 0 10px;
+    color: #5a5a5a;
+}

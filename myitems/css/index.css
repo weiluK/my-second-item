@@ -39,6 +39,10 @@ em {
 
 }
 
+/* a:hover {
+    color: #fb1116;
+} */
+
 /* "-------------头部-------------------" */
 .header {
     width: 100%;
@@ -243,6 +247,8 @@ h1 {
     text-align: center;
 }
 
+
+
 .top-list1>ul {
     width: 196px;
 
@@ -254,8 +260,11 @@ h1 {
     width: 196px;
     height: 51px;
     position: relative;
-    margin-left: 13px;
+    /* margin-left: 13px; */
+    padding-left: 13px;
 }
+
+
 
 .top-list1>ul>li>span>a {
     display: block;
@@ -905,9 +914,7 @@ h1 {
 }
 
 /* ---------------a:hover------------ */
-a:hover {
-    color: #fb1116;
-}
+
 
 
 

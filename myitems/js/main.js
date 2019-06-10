@@ -22,6 +22,8 @@ $(function () {
     }
 
     $(".top-list ul li span").on("mouseenter", function () {
+        $(this).parent().stop().css("background", "#eee").siblings().css("background", "#fff")
+        console.log("--------------");
 
         $(this).siblings().stop().show()
         $(this).parent().siblings().children(".nav_right").stop().hide()
@@ -55,7 +57,7 @@ $(function () {
 
     $(".rf>span").on("click", function () {
 
-        console.log(this);
+
         if ($(this).text() == "<") {
             m--;
             if (m < 0) {
@@ -72,6 +74,11 @@ $(function () {
     $(".rf>span").on("mouseleave", function () {
         timerBanner = setInterval(ftimer, 10000);
     });
+
+
+
+
+
 
     // ------------------商品列表数据加载--------------
 
@@ -189,7 +196,7 @@ $(function () {
     $(window).scroll(function (event) {
 
         let srollY = window.scrollY;
-        console.log(srollY);
+
 
 
         if (srollY >= 555) {

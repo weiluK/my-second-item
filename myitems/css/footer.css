@@ -1,0 +1,252 @@
+/* "-------------尾部footer-------------------" */
+.footer {
+    width: 100%;
+    height: 590px;
+    /* background-color: rgb(21, 219, 37); */
+}
+
+.f-top {
+    height: 108px;
+    width: 100%;
+    background-color: #dde0dc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.f-top li {
+    width: 100%;
+    position: relative;
+}
+
+.f-top li i {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    background-image: url(../images/f-top-log.gif);
+    margin-top: 23px;
+}
+
+.f-top li:nth-child(2) i {
+    background-image: url(../images/f-top-log02.gif);
+}
+
+.f-top li:nth-child(3) i {
+    background-image: url(../images/f-top-log03.gif);
+}
+
+.f-top li:nth-child(4) i {
+    background-image: url(../images/f-top-log04.gif);
+}
+
+.f-top li strong {
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    left: 72px;
+}
+
+.f-top li p {
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 52px;
+    left: 72px;
+}
+
+.f-center {
+    width: 892px;
+    height: 209px;
+    border: 1px solid #d2d2d2;
+    float: left;
+}
+
+.f-ableus {
+    float: left;
+    width: 275px;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 18px;
+}
+
+.f-ableus li {
+    width: 100%;
+    height: 100%;
+}
+
+.f-center h3 {
+    font-size: 17px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.f-center>i {
+    float: left;
+    margin-left: 20px;
+}
+
+.f-about {
+    width: 613px;
+    float: left;
+    margin-left: 20px;
+}
+
+.f-about li {
+    font-size: 12px;
+    line-height: 20px;
+    height: 50px;
+}
+
+.f-about li>a>span {
+    font-weight: bold;
+}
+
+.f-about li>p>a {
+    display: inline-block;
+    width: 613px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #4b4b4b;
+}
+
+.cl {
+    margin-top: 269px;
+    display: flex;
+    /* width: 892px; */
+    height: 128px;
+
+
+}
+
+
+.class01 {
+    width: 210px;
+    height: 128px;
+    float: left;
+    /* color: #555; */
+
+    font-size: 12px;
+
+}
+
+.c1 {
+    background-image: url(../images/f-shopcar.gif);
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+
+.c2 {
+    background-image: url(../images/f-litlelog.gif);
+    background-repeat: no-repeat;
+}
+
+.c3 {
+    background-image: url(../images/f-car.gif);
+    background-repeat: no-repeat;
+}
+
+.c4 {
+    background-image: url(../images/f-listen.gif);
+    background-repeat: no-repeat;
+}
+
+.class01 dt {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    padding-left: 30px;
+}
+
+.class01 dd a {
+
+    font-size: 12px;
+    color: #4b4b4b;
+    line-height: 25px;
+    padding-left: 30px;
+}
+
+.f-left {
+    width: 97px;
+    height: 132px;
+    font-size: 15px;
+    float: left;
+    line-height: 29px;
+    text-align: center;
+    margin-left: 41px;
+}
+
+.f-right {
+    width: 97px;
+    height: 132px;
+    font-size: 15px;
+    float: left;
+    line-height: 29px;
+    margin-left: 21px;
+    text-align: center;
+}
+
+/* ----------------------- */
+.f-bot {
+    width: 100%;
+    height: 195px;
+    border: 1px solid #eeeeee;
+}
+
+.t-menu .m {
+    display: block;
+    width: 511px;
+    padding-top: 10px;
+    margin: 0 auto;
+    height: 31px;
+}
+
+
+
+.t-menu .m a {
+
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0 12px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+.t-menu .m a:nth-child(1) {
+    border-style: none;
+}
+
+.l {
+    margin: 0 auto;
+    width: 884px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.l img {
+    /* float: left; */
+    width: 129px;
+    height: 50px;
+    display: inline-block;
+}
+
+.l img:nth-child(4) {
+    width: 36.5px;
+    height: 50px;
+}
+
+.p {
+    font-size: 9px;
+    line-height: 17px;
+    /* display: inline-block; */
+    text-align: center;
+    color: #b299a6;
+}
