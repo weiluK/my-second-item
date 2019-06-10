@@ -79,22 +79,21 @@ $(function () {
 
     $.get({
         url: "http://127.0.0.1/weilu/my-second-item/myitems/api/data.php",
+
         success(data) {
 
             let data1 = JSON.parse(data);
+            let len = data1.length;
+            for (let i = 0; i < len; i++) {
+                dataList(data1[i], i);
 
-            for (let i = 0; i < data1.length; i++) {
-                dataList(data1[i]);
             }
 
         }
 
     });
 
-    function dataList(data) {
-        console.log(data);
-
-
+    function dataList(data, index) {
         let res = "";
         let res1 = "";
 
@@ -114,22 +113,18 @@ $(function () {
                         <a class="m-more" href="" class="more">查看更多&gt;&gt;</a>
                         </div>
                     </div>
-                    <div class="products-box bj_bj01"><ul></ul></div>
+                    <div class="products-box bj_bj01"><ul class="li${index}"></ul></div>
                     </div> `;
 
         $(".main .content").append(res);
 
 
 
-        let n = 0;
+
         for (var key in data) {
-            console.log(key);
 
-            if (key == "topImg") {
-                console.log(n);
-                
-            }else{
 
+            if (key != "topImg") {
                 res1 = `<li>
                             <div class="img"><a href="">
                                 <img src="${data[key].src}"  width="180px" height="180px" title="${data[key].title}">
@@ -143,24 +138,69 @@ $(function () {
                                         </span>
                                 </p>
                             </li>`;
-                $(".bj_bj01 ul").append(res1);
-                n++;
-              
-
+                $(".bj_bj01 ul").eq(index).append(res1);
             }
 
         }
 
     }
 
+    $(".fix-left .last").on("click", function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+
+    })
+
+
+    $(".fix-left li:eq(0)").css("background", "red").on("click", function () {
+        $('body,html').animate({
+            scrollTop: "555px"
+        }, 1000);
+
+    });
+    $(".fix-left li:eq(1)").css("background", "#76b003").on("click", function () {
+        $('body,html').animate({
+            scrollTop: "1372px"
+        }, 1000);
+
+    });;
+    $(".fix-left li:eq(2)").css("background", "#30b633").on("click", function () {
+        $('body,html').animate({
+            scrollTop: "2285px"
+        }, 1000);
+
+    });;
+    $(".fix-left li:eq(3)").css("background", "#e0a63b").on("click", function () {
+        $('body,html').animate({
+            scrollTop: "3221px"
+        }, 1000);
+
+    });;
+    $(".fix-left li:eq(4)").css("background", "#da9166");
+    $(".fix-left li:eq(5)").css("background", "#27beaf");
+    $(".fix-left li:eq(6)").css("background", "#64b0c0");
+    $(".fix-left li:eq(7)").css("background", "#64b0c0");
+    $(".fix-left li:eq(8)").css("background", "#8351ce");
+    $(".fix-left li:eq(9)").css("background", "#6494e8");
 
 
 
+    $(window).scroll(function (event) {
+
+        let srollY = window.scrollY;
+        console.log(srollY);
 
 
+        if (srollY >= 555) {
+            $(".fix-left").stop(true, true).show();
+
+        } else {
+            $(".fix-left").stop(true, true).hide();
+        }
 
 
-
+    })
 
 
 })

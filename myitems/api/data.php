@@ -38,7 +38,7 @@ $data1 = array(
     ),
     "5"=>array(
         "title"=>"北京空运水蜜桃8个装",
-        "des"=>"79.8",
+        "des"=>"79.8",          
         "udes"=>"88",
         "src"=>"../images/images/m-06.jpg"
     ),
@@ -81,160 +81,161 @@ $data1 = array(
 );
 $data2 = array(
     "topImg"=>array(
-        "left"=>"../images/main-00.gif",
-        "center"=>"../images/main-02.jpg",
-        "right"=>"../images/main-01.jpg"
+        "left"=>"../images/main-10.gif",
+        "center"=>"../images/images/e954c4bd0a1344b9b1d1c1f60e0cc84b.jpg",
+        "right"=>"../images/main-12.gif"
     ),
     "0"=>array(
-        "title"=>"海南小台芒1kg",
+        "title"=>"依谷（精品）越南紫心番薯...
+        ",
         "des"=>"29.8",
         "udes"=>"36.8",
-        "src"=>"../images/images/main-01.jpg"
+        "src"=>"http://oss.egu365.com/upload/4030w0HHk7S565ToD3Yoh.jpg"
     ),
     "1"=>array(
-        "title"=>"海南精选荔枝1kg",
+        "title"=>"依谷（精品）生菜300g",
         "des"=>"39.8",
         "udes"=>"46.8",
-        "src"=>"../images/images/m-02.jpg"
+        "src"=>"http://oss.egu365.com/upload/7192Qf5P041fQ63467j6d.jpg"
     ),
     "2"=>array(
-        "title"=>"台湾水仙芒2kg",
+        "title"=>"依谷（精品）BB南瓜2个装",
         "des"=>"51.8",
         "udes"=>"58",
-        "src"=>"../images/images/m-03.jpg"
+        "src"=>"http://oss.egu365.com/upload/1681rn4fB816cjV1rY233f14.jpg"
     ),
     "3"=>array(
-        "title"=>"澳芒7kg",
+        "title"=>"依谷精选金银甜玉米550g",
         "des"=>"468",
         "udes"=>"689",
-        "src"=>"../images/images/m-04.jpg"
+        "src"=>"http://oss.egu365.com/upload/344875Pc5Ol28K3uWE6jAx.jpg"
     ),
     "4"=>array(
-        "title"=>"北京空运早春水蜜桃4个装",
+        "title"=>"奇威文昌鸡脚（鲜）500g",
         "des"=>"46.8",
         "udes"=>"59",
-        "src"=>"../images/images/m-06.jpg"
+        "src"=>"http://oss.egu365.com/upload/190643e7bdd012384ae0b144.jpg"
     ),
     "5"=>array(
-        "title"=>"北京空运水蜜桃8个装",
+        "title"=>"美益无公害猪脚550g",
         "des"=>"79.8",
         "udes"=>"88",
-        "src"=>"../images/images/m-06.jpg"
+        "src"=>"http://oss.egu365.com/upload/1477NG8vW158aJ502j3L056E.jpg"
     ),
     "6"=>array(
-        "title"=>"泰国山竹1kg",
+        "title"=>"美益梅头精肉（冷鲜肉）4...",
         "des"=>"42.8",
         "udes"=>"48",
-        "src"=>"../images/images/m-07.jpg"
+        "src"=>"http://oss.egu365.com/upload/17582jfVs50730Ve07477LSb.jpg"
     ),
     "7"=>array(
-        "title"=>"泰国山竹2.5kg",
+        "title"=>"美益精品无公害排骨550g",
         "des"=>"98",
         "udes"=>"128",
-        "src"=>"../images/images/m-07.jpg"
+        "src"=>"http://oss.egu365.com/upload/1639i0w378ODX386B5n43FoR.jpg"
     ),
     "8"=>array(
-        "title"=>"泰国金枕头榴莲4-5斤",
+        "title"=>"依谷汕头牛筋丸400g",
         "des"=>"178",
         "udes"=>"198",
-        "src"=>"../images/images/m-08.jpg"
+        "src"=>"http://oss.egu365.com/upload/1602t4WN1682TG8TA118k861.jpg"
     ),
     "9"=>array(
-        "title"=>"泰国金枕榴莲5-7斤",
+        "title"=>"山林散养粤北土鸡（105...",
         "des"=>"218",
         "udes"=>"238",
-        "src"=>"../images/images/m-08.jpg"
+        "src"=>"http://oss.egu365.com/upload/44a438a27cd14dc2894956cea537aa46.jpg"
     ),
     "10"=>array(
-        "title"=>"海南西州蜜瓜4kg",
+        "title"=>"茅台酒土黑猪至臻广式腊肉...",
         "des"=>"78.9",
         "udes"=>"88",
-        "src"=>"../images/images/m-09.jpg"
+        "src"=>"http://oss.egu365.com/upload/59710838126be414fd7ba33.jpg"
     ), 
     "11"=>array(
-        "title"=>"甘美西瓜1个装（6.5-... ",
+        "title"=>"甘澳洲牛肉礼盒3kg",
         "des"=>"59.8",
         "udes"=>"66.8",
-        "src"=>"../images/images/m-10.jpg"
+        "src"=>"http://oss.egu365.com/upload/273bf8a6b5c857447badd4.jpg"
     ),
 );
 $data3 = array(
     "topImg"=>array(
-        "left"=>"../images/main-00.gif",
-        "center"=>"../images/main-02.jpg",
-        "right"=>"../images/main-01.jpg"
+        "left"=>"../images/main-20.gif",
+        "center"=>"http://oss.egu365.com/upload/05e217788bfd475794d8699282f4e48d.jpg",
+        "right"=>"http://oss.egu365.com/upload/fb66297ad41446428b65e8773c5e2d9e.jpg"
     ),
     "0"=>array(
-        "title"=>"海南小台芒1kg",
+        "title"=>"六月香甜面酱300g",
         "des"=>"29.8",
         "udes"=>"36.8",
-        "src"=>"../images/images/main-01.jpg"
+        "src"=>"http://oss.egu365.com/upload/292eCWy2FtMO35157mRP0y2.jpg"
     ),
     "1"=>array(
-        "title"=>"海南精选荔枝1kg",
+        "title"=>"亨氏番茄沙司300g",
         "des"=>"39.8",
         "udes"=>"46.8",
-        "src"=>"../images/images/m-02.jpg"
+        "src"=>"http://oss.egu365.com/upload/82470b00v0l4g8Gox10217x.jpg"
     ),
     "2"=>array(
-        "title"=>"台湾水仙芒2kg",
+        "title"=>"京日红豆沙500g",
         "des"=>"51.8",
         "udes"=>"58",
-        "src"=>"../images/images/m-03.jpg"
+        "src"=>"http://oss.egu365.com/upload/3d737e350f214a3094a38e88eca7c808.jpg"
     ),
     "3"=>array(
-        "title"=>"澳芒7kg",
+        "title"=>"李锦记香辣酱205g",
         "des"=>"468",
         "udes"=>"689",
-        "src"=>"../images/images/m-04.jpg"
+        "src"=>"http://oss.egu365.com/upload/9499f7f30fa02fb4cf587f3.jpg"
     ),
     "4"=>array(
-        "title"=>"北京空运早春水蜜桃4个装",
+        "title"=>"四季宝花生酱幼滑510g",
         "des"=>"46.8",
         "udes"=>"59",
-        "src"=>"../images/images/m-06.jpg"
+        "src"=>"http://oss.egu365.com/upload/1695EQbv46sy7H0hp78OBa5t.jpg"
     ),
     "5"=>array(
-        "title"=>"北京空运水蜜桃8个装",
+        "title"=>"军供山泉手工面1.25kg",
         "des"=>"79.8",
         "udes"=>"88",
-        "src"=>"../images/images/m-06.jpg"
+        "src"=>"http://oss.egu365.com/upload/1831f5a412ed9a854873bbea.jpg"
     ),
     "6"=>array(
-        "title"=>"泰国山竹1kg",
+        "title"=>"依谷稻花香大米2.5kg...",
         "des"=>"42.8",
         "udes"=>"48",
-        "src"=>"../images/images/m-07.jpg"
+        "src"=>"http://oss.egu365.com/upload/b7340796603d4e488660ba433c4cf6be.jpg"
     ),
     "7"=>array(
-        "title"=>"泰国山竹2.5kg",
+        "title"=>"沁州黄小米560g（罐）",
         "des"=>"98",
         "udes"=>"128",
-        "src"=>"../images/images/m-07.jpg"
+        "src"=>"http://oss.egu365.com/upload/1528PD2HI1yU808Apr65S07N.jpg"
     ),
     "8"=>array(
-        "title"=>"泰国金枕头榴莲4-5斤",
+        "title"=>"依家杂粮养生组合",
         "des"=>"178",
         "udes"=>"198",
-        "src"=>"../images/images/m-08.jpg"
+        "src"=>"http://oss.egu365.com/upload/1658H267e1E2PA7sl8t6051.jpg"
     ),
     "9"=>array(
-        "title"=>"泰国金枕榴莲5-7斤",
+        "title"=>"依谷古法鲜榨花生油900ml",
         "des"=>"218",
         "udes"=>"238",
-        "src"=>"../images/images/m-08.jpg"
+        "src"=>"http://oss.egu365.com/upload/1313t043JAERVUW28oC4Xdn.jpg"
     ),
     "10"=>array(
-        "title"=>"海南西州蜜瓜4kg",
+        "title"=>"犀牛特级初榨橄榄油500ml",
         "des"=>"78.9",
         "udes"=>"88",
-        "src"=>"../images/images/m-09.jpg"
+        "src"=>"http://oss.egu365.com/upload/1014Pce25P0ucYke763655.jpg"
     ), 
     "11"=>array(
-        "title"=>"甘美西瓜1个装（6.5-... ",
+        "title"=>"山茶山天然纯山茶油礼盒5...",
         "des"=>"59.8",
         "udes"=>"66.8",
-        "src"=>"../images/images/m-10.jpg"
+        "src"=>"http://oss.egu365.com/upload/1839G1580686gw4fEDLx120g.jpg"
     ),
 );
 $data=array($data1,$data2,$data3);
