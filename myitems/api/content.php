@@ -1,89 +1,108 @@
 <?php
-echo "---------------";
-header("Content-Type:text/xml;charset=UTF-8");
-$data = array(
-    "topImg"=>array(
-        "left"=>"../images/main-00.gif",
-        "center"=>"../images/main-02.jpg",
-        "right"=>"../images/main-01.jpg"
-    ),
+
+$data1 = array(
     "0"=>array(
-        "title"=>"海南小台芒1kg",
-        "des"=>"29.8",
-        "udes"=>"36.8",
-        "src"=>"../images/images/main-01.jpg"
+        "title"=>" 南非柠檬6枚盒装",
+        "price"=>"￥27.8 ",
+        "ms01"=>"进口水果 优质大果 新鲜 汁多 ",
+        "src"=>"http://oss.egu365.com/upload/131510rYC6c0n531u0bhIMaD.jpg"
     ),
     "1"=>array(
-        "title"=>"海南精选荔枝1kg",
-        "des"=>"39.8",
-        "udes"=>"46.8",
-        "src"=>"../images/images/m-02.jpg"
+        "title"=>" 基地直供蓝莓125g*3",
+        "price"=>"￥59.8 ",
+        "ms01"=>"果肉柔嫩 口味香甜  ",
+        "src"=>"http://oss.egu365.com/upload/47a71a56a6294c33b6ea4871a362fe51.jpg"
     ),
     "2"=>array(
-        "title"=>"台湾水仙芒2kg",
-        "des"=>"51.8",
-        "udes"=>"58",
-        "src"=>"../images/images/m-03.jpg"
+        "title"=>" 海南小青柠480g",
+        "price"=>"￥17.8 ",
+        "ms01"=>"新鲜青柠檬 时令现摘水果 酸爽适",
+        "src"=>"http://oss.egu365.com/upload/1131143052f8e2a4af59a0e.jpg"
     ),
     "3"=>array(
-        "title"=>"澳芒7kg",
-        "des"=>"468",
-        "udes"=>"689",
-        "src"=>"../images/images/m-04.jpg"
+        "title"=>"泰国进口椰青1个装",
+        "price"=>" ￥15.8  ",
+        "ms01"=>" 赠送吸管 清香四溢 唇齿流香 喝",
+        "src"=>"http://oss.egu365.com/upload/1551lWQ8j6aY81n42Ib5rE08.jpg"
     ),
     "4"=>array(
-        "title"=>"北京空运早春水蜜桃4个装",
-        "des"=>"46.8",
-        "udes"=>"59",
-        "src"=>"../images/images/m-06.jpg"
+        "title"=>"   台湾莲雾4个装",
+        "price"=>"￥39.8 ",
+        "ms01"=>" 优质大果 清甜凉口 无核无籽 汁",
+        "src"=>"http://oss.egu365.com/upload/665a51i0kj5y17b051rw8l1.jpg"
     ),
     "5"=>array(
-        "title"=>"北京空运水蜜桃8个装",
-        "des"=>"79.8",
-        "udes"=>"88",
-        "src"=>"../images/images/m-06.jpg"
+        "title"=>"   台湾莲雾8个装",
+        "price"=>"￥99.8 ",
+        "ms01"=>" 优质大果 清甜凉口 无核无籽 汁",
+        "src"=>"http://oss.egu365.com/upload/665a51i0kj5y17b051rw8l1.jpg"
     ),
     "6"=>array(
-        "title"=>"泰国山竹1kg",
-        "des"=>"42.8",
-        "udes"=>"48",
-        "src"=>"../images/images/m-07.jpg"
+        "title"=>"  美早樱桃尝鲜装800g",
+        "price"=>"￥168.0",
+        "ms01"=>"  果实色泽鲜艳 香甜可口 富含多种",
+        "src"=>"http://oss.egu365.com/upload/688f3349ba1da0242d0b475.jpg"
     ),
     "7"=>array(
-        "title"=>"泰国山竹2.5kg",
-        "des"=>"98",
-        "udes"=>"128",
-        "src"=>"../images/images/m-07.jpg"
+        "title"=>" 海南椰子(单个)约900g",
+        "price"=>"￥12.8 ",
+        "ms01"=>"送吸管 新鲜去皮 汁水清甜 果肉 ",
+        "src"=>"http://oss.egu365.com/upload/1e5e55219d4c4a7f91ac1a3527eba54d.jpg"
     ),
     "8"=>array(
-        "title"=>"泰国金枕头榴莲4-5斤",
-        "des"=>"178",
-        "udes"=>"198",
-        "src"=>"../images/images/m-08.jpg"
+        "title"=>"    广东珍珠番茄900g",
+        "price"=>"￥17.8 ",
+        "ms01"=>"  美美的红色果肉 沙沙甜甜 口口爆 ",
+        "src"=>"http://oss.egu365.com/upload/1717bae122b4484daf06afbafc76e2c1.jpg"
     ),
     "9"=>array(
-        "title"=>"泰国金枕榴莲5-7斤",
-        "des"=>"218",
-        "udes"=>"238",
-        "src"=>"../images/images/m-08.jpg"
+        "title"=>"新西兰佳沛阳光金奇异果6枚装",
+        "price"=>"￥93.8 
+  ",
+        "ms01"=>"   大果是普通奇异果近两倍的重量 ",
+        "src"=>"http://oss.egu365.com/upload/bff017c2caa04ac9a510704b2eaa22df.jpg"
     ),
     "10"=>array(
-        "title"=>"海南西州蜜瓜4kg",
-        "des"=>"78.9",
-        "udes"=>"88",
-        "src"=>"../images/images/m-09.jpg"
-    ), 
+        "title"=>"    新疆库尔勒香梨1kg",
+        "price"=>"￥29.8 ",
+        "ms01"=>"  梨中贵族 甘甜滋润 沙漠中的一股",
+        "src"=>"http://oss.egu365.com/upload/33064c1c4ee14c7fa00a8cd22991692f.jpg"
+    ),
     "11"=>array(
-        "title"=>"甘美西瓜1个装（6.5-... ",
-        "des"=>"59.8",
-        "udes"=>"66.8",
-        "src"=>"../images/images/m-10.jpg"
+        "title"=>"   精选云南红提1kg",
+        "price"=>"￥32.8 ",
+        "ms01"=>" 果中鲜品 品质上乘 果皮易剥 味",
+        "src"=>"http://oss.egu365.com/upload/dc24466c4336483c99f26bb6c6277ba0.jpg"
+    ),
+    "12"=>array(
+        "title"=>"  美国无籽红提1kg",
+        "price"=>"￥59.8 ",
+        "ms01"=>" 个头饱满 无籽多汁 可带皮吃 果 ",
+        "src"=>"http://oss.egu365.com/upload/131O1111WbG6Di7FK6IVgM.jpg"
+    ),
+    "13"=>array(
+        "title"=>" 美国无籽黑提1kg",
+        "price"=>"￥64.8 ",
+        "ms01"=>"  紫黑亮泽 玲珑黑美人 果皮不涩口  ",
+        "src"=>"http://oss.egu365.com/upload/13727X0718r1T0283a3m88i6.jpg"
+    ),
+    "14"=>array(
+        "title"=>"  美国无籽红提1kg",
+        "price"=>"￥59.8 ",
+        "ms01"=>" 个头饱满 无籽多汁 可带皮吃 果 ",
+        "src"=>"http://oss.egu365.com/upload/131O1111WbG6Di7FK6IVgM.jpg"
+    ),
+    "15"=>array(
+        "title"=>" 美国无籽黑提1kg",
+        "price"=>"￥64.8 ",
+        "ms01"=>"  紫黑亮泽 玲珑黑美人 果皮不涩口  ",
+        "src"=>"http://oss.egu365.com/upload/13727X0718r1T0283a3m88i6.jpg"
     ),
 );
 
-echo json_encode($data);
+$data=array($data1);
 
 
-
+echo json_encode($data1);
 
 ?>

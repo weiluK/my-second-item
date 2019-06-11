@@ -43,11 +43,23 @@ em {
     display: none;
 }
 
+
+
 /* ----------------------main-------------------- */
 .main-list {
     width: 100%;
-    height: 2703px;
+    overflow: hidden;
+    z-index: 99999;
+    border-top: 2px solid #fc1116;
 
+}
+
+.main-list::after {
+    content: '';
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
 }
 
 .ttop-list {
@@ -68,12 +80,18 @@ em {
 .ttop-list>ul {
     float: left;
     margin-left: 115px;
+    position: relative;
 }
 
-.ttop-list>ul li {
+.ttop-list>ul>li {
     float: left;
     background-color: #efefef;
     margin-right: 1px;
+}
+
+.ttop-list>ul>li:nth-child(1) {
+    background-color: #76b003;
+    z-index: 99999999999999;
 }
 
 .ttop-list>ul>li a {
@@ -81,7 +99,7 @@ em {
     width: 113px;
     height: 32px;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 40px;
     padding-left: 12px;
     float: left;
 }
@@ -98,7 +116,7 @@ em {
 .left-list {
     width: 210px;
     height: 100%;
-
+    overflow: hidden;
     float: left;
 }
 
@@ -116,9 +134,9 @@ em {
 .class-selec {
     width: calc(100% - 210px);
     float: left;
-    height: 197px;
+    /* height: 197px; */
     margin-top: 30px;
-
+    overflow: hidden;
 }
 
 .left-list>dl dt span {
@@ -130,6 +148,7 @@ em {
     position: absolute;
     top: 13px;
     left: 0px;
+
 }
 
 .left-list>dl dt {
@@ -150,33 +169,252 @@ em {
     color: #666666;
 }
 
-.class-selec ul {
-    height: 35px;
+.class-selec>ul {
+    /* height: 35px; */
     width: 1221px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.class-selec>ul>li {
-    float: left;
-    width: 100%;
-    height: 100%;
-    font-size: 13px;
-    line-height: 35px;
-    text-align: center;
+    overflow: hidden;
     border-bottom: 1px dotted #b3b3b3;
 }
 
+.class-selec>ul ul {
+    /* height: 35px; */
+    width: 1221px;
+    overflow: hidden;
+    display: none;
+}
+
+.class-selec>ul ul {
+    height: 35px;
+    width: 1221px;
+    margin-left: 203.49px;
+
+}
+
+
+.class-selec>ul li {
+    float: left;
+    width: 203.49px;
+    height: 36px;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+
 .class-selec .lm {
     width: 100%;
-    height: 65px;
+    height: 55px;
     font-size: 11px;
     color: #a6bfdf;
     text-align: center;
     line-height: 11px;
     margin-top: 21px;
-    background-image: url(../images/list-img/down.gif);
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
 
+}
+
+.class-selec .lm img {
+    margin-top: 4px;
+}
+
+.list-nav {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 1223px;
+    display: none;
+    z-index: 999999;
+    background-color: aqua;
+
+}
+
+.n-menu2 {
+    border-bottom: 1px dashed #E3E3E3;
+    padding: 0;
+    background: #fff;
+    font-size: 12px;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.n-menu2 dt {
+    width: 195px;
+    float: left;
+    line-height: 30px;
+}
+
+.n-menu2 dt span {
+
+    float: right;
+}
+
+.n-menu2>dd {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    padding: 0;
+    line-height: 30px;
+    width: 12%;
+    text-align: center;
+}
+
+
+
+/* ----------------------商品列表----------------- */
+.list-shangpin {
+    float: left;
+    z-index: 9999px;
+    margin-bottom: 10px;
+
+}
+
+.list-shangpin .cp-toplist {
+    width: 1220.9px;
+    height: 33px;
+    background-color: #e7e7e7;
+}
+
+.list-shangpin .cp-toplist ul {
+    float: left;
+
+}
+
+.list-shangpin .cp-toplist ul li {
+    height: 33px;
+    width: 60px;
+    color: #555555;
+    float: left;
+    font-size: 11px;
+    line-height: 33px;
+    text-align: center;
+
+}
+
+.list-shangpin .cp-toplist ul li:nth-child(1) {
+    background-color: #dddddd;
+
+}
+
+.list-shangpin .cp-toplist span {
+    float: right;
+    font-size: 11px;
+    line-height: 33px;
+    padding: 0 18px;
+    color: #555555;
+}
+
+.shangpin-list ul {
+    width: 1220.9px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+}
+
+.shangpin-list ul li {
+    width: 23.9%;
+    padding: 20px 0;
+    border: 1px solid #e7e7e7;
+    margin: 0px 2px;
+    text-align: center;
+
+}
+
+.cp-list-ul-li-sel .price {
+    text-align: left;
+    display: block;
+    font-size: 24px;
+    line-height: 54px;
+    color: #fc1116;
+}
+
+.cp-list-ul-li-sel .t {
+    display: block;
+
+    background-position: 0 3px;
+    background-image: url(../images/list-img/ico-crd.png);
+    background-repeat: no-repeat;
+
+}
+
+.cp-list-ul-li-sel .t a {
+    display: block;
+    text-align: left;
+    padding-left: 55px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.cp-list-ul-li-sel .t i {
+    display: block;
+    padding-left: 55px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    color: #666666;
+}
+
+.cp-list-ul-li-sel p {
+    font-size: 11px;
+    line-height: 37px;
+    display: block;
+    text-align: left;
+}
+
+.cp-list-ul-li-sel p font {
+    color: #fc1116;
+    margin-right: 2x;
+    margin-left: 2px;
+}
+
+.cp-list-ul-li-sel p em {
+    color: #af52ef;
+    margin-left: 17px;
+}
+
+.Spinner a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+    outline: 0;
+}
+
+.Spinner .Amount {
+    width: 50px;
+    height: 17px;
+    padding: 4px 5px;
+    line-height: 17px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ededed;
+    float: left;
+    text-align: center;
+    color: #565656;
+    outline: 0;
+}
+
+a.bth-jrshop {
+    display: inline-table;
+    width: 73px;
+    height: 17px;
+    padding: 4px 5px 4px 50px;
+    line-height: 17px;
+    border: 1px solid #ededed;
+    color: #565656;
+    outline: 0;
+    font-size: 12px;
+
+    color: #fc1116;
+    background: url(../images/list-img/icon-shop.png) no-repeat 10px center;
+}
+
+.current>span {
+    transform: rotateZ(-90deg);
+
+    background-color: red;
 }

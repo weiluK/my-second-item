@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/top.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/index-list.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main-list.js"></script>
 </head>
 
 <body>
@@ -47,10 +50,292 @@
                     <li><a href="">家居厨卫</a>
                         <span>&gt;</span>
                     </li>
+
                     <li><a href="">创意家电</a>
                         <span>&gt;</span>
                     </li>
+
+                    <ul class="list-nav">
+                        <li class="n-menu2">
+                            <dt>奇异果/车厘子<span>&gt;</span>
+                            </dt>
+                            <dd> 金奇异果 </dd>
+                            <dd>绿奇异果/猕猴桃</dd>
+                            <dd>车厘子/樱桃</dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>苹果/梨子/瓜类
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 红玫瑰/加力果 </dd>
+                            <dd> 富士/糖心苹果 </dd>
+                            <dd>其他苹果</dd>
+                            <dd>香梨</dd>
+                            <dd> 丰水梨</dd>
+                            <dd> 其他香梨</dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>提子/葡萄/莓类
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 无籽红提/黑提 </dd>
+                            <dd>有籽葡萄</dd>
+                            <dd>夏黑葡萄 </dd>
+                            <dd>其他葡萄</dd>
+                            <dd>蓝莓</dd>
+                            <dd> 草莓</dd>
+                        </li>
+                        <li class="n-menu2">
+                            <dt>橙桔柑柚
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 冰糖橙/脐橙 </dd>
+                            <dd>其他橙子</dd>
+                            <dd>金桔/蜜桔 </dd>
+                            <dd> 其他桔子</dd>
+                            <dd> 丑柑/皇帝柑</dd>
+                            <dd> 其他柑子</dd>
+                        </li>
+
+
+                        <li class="n-menu2">
+                            <dt>桃李杏枣
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 桃子 </dd>
+                            <dd> 杨桃 </dd>
+                            <dd> 李子 </dd>
+                            <dd> 冬枣/青枣</dd>
+                            <dd>黑布李 </dd>
+                            <dd> 杏子 </dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>热带水果
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 榴莲/芒果</dd>
+                            <dd> 香蕉</dd>
+                            <dd> 荔枝/火龙果</dd>
+                            <dd> 凤梨/菠萝 </dd>
+                            <dd> 椰子</dd>
+                            <dd> 山竹</dd>
+
+                        </li>
+                        <li class="n-menu2">
+                            <dt>其他水果
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 圣女果/小番茄 </dd>
+                            <dd>牛油果</dd>
+                            <dd> 莲雾 </dd>
+                            <dd> 释迦</dd>
+                            <dd> 青柠檬/柠檬 </dd>
+                            <dd>其他</dd>
+                        </li>
+
+
+                        <li class="n-menu2">
+                            <dt>水果礼盒
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 100以下 </dd>
+                            <dd> 100-200 </dd>
+                            <dd> 200-300 </dd>
+                            <dd> 300-500 </dd>
+                            <dd>其他</dd>
+                        </li>
+                    </ul>
+                    <ul class="list-nav">
+                        <li class="n-menu2">
+                            <dt>奇异果/车厘子<span>&gt;</span>
+                            </dt>
+                            <dd> 金奇异果 </dd>
+                            <dd>绿奇异果/猕猴桃</dd>
+                            <dd>车厘子/樱桃</dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>苹果/梨子/瓜类
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 红玫瑰/加力果 </dd>
+                            <dd> 富士/糖心苹果 </dd>
+                            <dd>其他苹果</dd>
+                            <dd>香梨</dd>
+                            <dd> 丰水梨</dd>
+                            <dd> 其他香梨</dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>提子/葡萄/莓类
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 无籽红提/黑提 </dd>
+                            <dd>有籽葡萄</dd>
+                            <dd>夏黑葡萄 </dd>
+                            <dd>其他葡萄</dd>
+                            <dd>蓝莓</dd>
+                            <dd> 草莓</dd>
+                        </li>
+                        <li class="n-menu2">
+                            <dt>橙桔柑柚
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 冰糖橙/脐橙 </dd>
+                            <dd>其他橙子</dd>
+                            <dd>金桔/蜜桔 </dd>
+                            <dd> 其他桔子</dd>
+                            <dd> 丑柑/皇帝柑</dd>
+                            <dd> 其他柑子</dd>
+                        </li>
+
+
+                        <li class="n-menu2">
+                            <dt>桃李杏枣
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 桃子 </dd>
+                            <dd> 杨桃 </dd>
+                            <dd> 李子 </dd>
+                            <dd> 冬枣/青枣</dd>
+                            <dd>黑布李 </dd>
+                            <dd> 杏子 </dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>热带水果
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 榴莲/芒果</dd>
+                            <dd> 香蕉</dd>
+                            <dd> 荔枝/火龙果</dd>
+                            <dd> 凤梨/菠萝 </dd>
+                            <dd> 椰子</dd>
+                            <dd> 山竹</dd>
+
+                        </li>
+                        <li class="n-menu2">
+                            <dt>其他水果
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 圣女果/小番茄 </dd>
+                            <dd>牛油果</dd>
+                            <dd> 莲雾 </dd>
+                            <dd> 释迦</dd>
+                            <dd> 青柠檬/柠檬 </dd>
+                            <dd>其他</dd>
+                        </li>
+
+
+                        <li class="n-menu2">
+                            <dt>水果礼盒
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 100以下 </dd>
+                            <dd> 100-200 </dd>
+                            <dd> 200-300 </dd>
+                            <dd> 300-500 </dd>
+                            <dd>其他</dd>
+                        </li>
+                    </ul>
+                    <ul class="list-nav">
+                        <li class="n-menu2">
+                            <dt>奇异果/车厘子<span>&gt;</span>
+                            </dt>
+                            <dd> 金奇异果 </dd>
+                            <dd>绿奇异果/猕猴桃</dd>
+                            <dd>车厘子/樱桃</dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>苹果/梨子/瓜类
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 红玫瑰/加力果 </dd>
+                            <dd> 富士/糖心苹果 </dd>
+                            <dd>其他苹果</dd>
+                            <dd>香梨</dd>
+                            <dd> 丰水梨</dd>
+                            <dd> 其他香梨</dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>提子/葡萄/莓类
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 无籽红提/黑提 </dd>
+                            <dd>有籽葡萄</dd>
+                            <dd>夏黑葡萄 </dd>
+                            <dd>其他葡萄</dd>
+                            <dd>蓝莓</dd>
+                            <dd> 草莓</dd>
+                        </li>
+                        <li class="n-menu2">
+                            <dt>橙桔柑柚
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 冰糖橙/脐橙 </dd>
+                            <dd>其他橙子</dd>
+                            <dd>金桔/蜜桔 </dd>
+                            <dd> 其他桔子</dd>
+                            <dd> 丑柑/皇帝柑</dd>
+                            <dd> 其他柑子</dd>
+                        </li>
+
+
+                        <li class="n-menu2">
+                            <dt>桃李杏枣
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 桃子 </dd>
+                            <dd> 杨桃 </dd>
+                            <dd> 李子 </dd>
+                            <dd> 冬枣/青枣</dd>
+                            <dd>黑布李 </dd>
+                            <dd> 杏子 </dd>
+                        </li>
+
+                        <li class="n-menu2">
+                            <dt>热带水果
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 榴莲/芒果</dd>
+                            <dd> 香蕉</dd>
+                            <dd> 荔枝/火龙果</dd>
+                            <dd> 凤梨/菠萝 </dd>
+                            <dd> 椰子</dd>
+                            <dd> 山竹</dd>
+
+                        </li>
+                        <li class="n-menu2">
+                            <dt>其他水果
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 圣女果/小番茄 </dd>
+                            <dd>牛油果</dd>
+                            <dd> 莲雾 </dd>
+                            <dd> 释迦</dd>
+                            <dd> 青柠檬/柠檬 </dd>
+                            <dd>其他</dd>
+                        </li>
+
+
+                        <li class="n-menu2">
+                            <dt>水果礼盒
+                                <span>&gt;</span>
+                            </dt>
+                            <dd> 100以下 </dd>
+                            <dd> 100-200 </dd>
+                            <dd> 200-300 </dd>
+                            <dd> 300-500 </dd>
+                            <dd>其他</dd>
+                        </li>
+                    </ul>
                 </ul>
+
             </div>
             <div class="left-list">
                 <div class="shuiguo">新鲜水果</div>
@@ -168,7 +453,21 @@
                     <li> 2.5kg(7)</li>
                     <li> 8个装(6) </li>
                     <li> 4.5kg(5) </li>
-                    <li> 4kg(5)</li>
+                    <li> 4kg(5)</li><br>
+                    <ul>
+                        <li>1.5kg(3) </li>
+                        <li>3个装(3) </li>
+                        <li> 4个装(3) </li>
+                        <li>5kg(2) </li>
+                        <li>900g(2)</li>
+                    </ul>
+                    <ul>
+                        <li>3kg(1) </li>
+                        <li>3个装(3) </li>
+                        <li>5-7斤(1个装)(1) </li>
+                        <li>2KG(1) </li>
+                        <li>1.8kg-2kg(1)</li>
+                    </ul>
                 </ul>
                 <ul>
                     <li>品牌 </li>
@@ -185,13 +484,71 @@
                     <li> 美国(8) </li>
                     <li> 新西兰(7) </li>
                     <li>台湾(7)</li>
+                    <ul>
+                        <li>越南(6) </li>
+                        <li>新疆(4)</li>
+                        <li>5-7斤(1个装)(1) </li>
+                        <li> 澳洲(3) </li>
+                        <li>河北(3))</li>
+                    </ul>
+                    <ul>
+                        <li>云南(3) </li>
+                        <li> 山东(3) </li>
+                        <li>意大利(3) </li>
+                        <li>广东深圳(2) </li>
+                        <li>山东烟台(2) </li>
+                    </ul>
                 </ul>
                 <div class="lm">
                     更多选项
-
+                    <br> <img src="../images/list-img/down.gif" alt="">
                 </div>
             </div>
-            <div class="list-shangpin"></div>
+            <div class="list-shangpin">
+                <div class="cp-toplist">
+                    <ul>
+                        <li>默认</li>
+                        <li> 新品 </li>
+                        <li> 进口
+                        </li>
+                        <li> 促销 </li>
+                        <li>扶贫特产</li>
+                    </ul>
+                    <span>共99个商品</span>
+                </div>
+                <div class="shangpin-list">
+                    <ul>
+                        <!-- <li class="cp-list-ul-li-sel">
+                            <span class="img"><a href=""><img
+                                        src="http://oss.egu365.com/upload/47a71a56a6294c33b6ea4871a362fe51.jpg"
+                                        width="250px"></a></span>
+
+                            <span class="price"><em>￥59.8</em></span>
+
+                            <span class="t"><a href="" target="">基地直供蓝莓125g*3</a>
+                                <i>果肉柔嫩 口味香甜</i></span>
+
+                            <p>
+                                <font>自 营</font>
+                                <em>深圳平湖仓</em>
+                                <em>同城速递</em>
+                            </p>
+
+                            <div class="">
+                                <div class="Spinner">
+                                    <a class="DisDe"><i>-</i></a>
+                                    <input class="Amount" value="1">
+                                    <a class="Increase"><i>+</i></a>
+                                </div>
+
+                                <a class="bth-jrshop" href="">加入购物车</a>
+
+                            </div>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
 
         </div>
         <include src="..\tpl\footer.html"></include>

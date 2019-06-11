@@ -165,7 +165,7 @@ h1 {
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 501px;
+    /* height: 501px; */
 }
 
 .top-list .top-list1 .top-listtest {
