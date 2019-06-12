@@ -24,7 +24,7 @@ $(function () {
     })
 
     $.get({
-        url: "../api/content.php",
+        url: "../api/02content.php",
 
         success(data) {
 
@@ -75,6 +75,15 @@ $(function () {
         }
     }
 
+
+    $(".shangpin-list ul").on("mouseenter", ".cp-list-ul-li-sel", function () {
+
+        $(this).css("border", "1px solid #e7e7e7").siblings().css("border-style", "none");
+    })
+    $(".shangpin-list ul").on("mouseleave", ".cp-list-ul-li-sel", function () {
+
+        $(this).css("border-style", "none");
+    })
 
 
 

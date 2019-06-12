@@ -9,8 +9,4 @@ $(function () {
         $(".imgb img").eq(n).show().siblings().hide();
     }, 5000);
 
-
-
-
-
 })

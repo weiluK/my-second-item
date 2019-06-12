@@ -78,7 +78,7 @@ $(function () {
 
 
     $.get({
-        url: "http://127.0.0.1/weilu/my-second-item/myitems/api/data.php",
+        url: "http://127.0.0.1/weilu/my-second-item/myitems/api/01data.php",
 
         success(data) {
 
@@ -144,6 +144,10 @@ $(function () {
         }
 
     }
+
+
+
+
 
     $(".fix-left .last").on("click", function () {
         $('body,html').animate({
