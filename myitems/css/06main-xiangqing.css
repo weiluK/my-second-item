@@ -50,7 +50,10 @@ em {
     border-top: 2px solid #fb1116;
 }
 
-
+.move-view {
+    width: 267px !important;
+    height: 267px !important;
+}
 
 .ttop-list {
     float: left;
@@ -543,7 +546,7 @@ em {
 }
 
 .tempWrap ul {
-    width: 3556px;
+    width: 5000px;
     position: absolute;
     left: 0px;
     top: 0px;

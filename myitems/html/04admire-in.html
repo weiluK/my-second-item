@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/04admire-in.css">
+    <script src="../lib/Cookie.js"></script>
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/04admire-in.js"></script>
 </head>
 
 <body>
@@ -21,7 +24,7 @@
             <div class="ad-dl">
                 <h2>登录</h2>
                 <span>还没有账号？
-                    <p><a href="">注册</a></p> </span>
+                    <p><a href="../html/03admire.html">注册</a></p> </span>
             </div>
             <ul class="ad-list">
                 <li class="ad-input">
@@ -45,20 +48,20 @@
                         验证码
                     </p>
                     <input type="text" placeholder="验证码">
-                    <span></span>
+                    <span style="visibility: hidden"></span>
                     <div class="checkbox"> <img src="../images/" alt=""></div>
                 </li>
 
 
 
-                <li> 记住我
+                <li class="check"> 记住我
                     <input type="checkbox">
                     <a href="">
                         忘记密码？
                     </a>
                 </li>
-                <li>
-                    <a href="">登录</a>
+                <li class="submit">
+                    <a>登录</a>
                 </li>
                 <li>
                     <img src="../images/admin-login-san.png" alt="">

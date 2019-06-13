@@ -44,8 +44,8 @@ img {
 }
 
 .magnifier-container .move-view {
-	width: 266.75px;
-	height: 266.75px;
+	width: 266.75px !important;
+	height: 266.75px !important;
 	position: absolute;
 	background-image: url('../images/detail-img/move-box.png');
 }

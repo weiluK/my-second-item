@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/03admire.css">
+    <script src="../lib/jquery-3.4.1.js"></script>
+    <script src="../js/03admire.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
             <div class="ad-dl">
                 <h2>注册</h2>
                 <span>已有账号
-                    <p>登录</p> </span>
+                    <p class="p-a"><a href="../html/04admire-in.html">登录</a></p> </span>
             </div>
             <ul class="ad-list">
                 <li class="ad-input">
@@ -52,7 +54,7 @@
                     <p>
                         <img src="../images/register_02.png" alt="">
                     </p>
-                    <input type="text" placeholder="请输入密码">
+                    <input type="password" placeholder="请输入密码">
                     <span></span>
                 </li>
                 <li class="ad-er">
@@ -60,11 +62,11 @@
                         <img src="../images/login_error.png" alt="">
                     </h6>密码为6-16位的数字，字母或下划线组成
                 </li>
-                <li class="ad-input">
+                <li class="ad-input password">
                     <p>
                         <img src="../images/register_02.png" alt="">
                     </p>
-                    <input type="text" placeholder="请输确认密码">
+                    <input type="password" placeholder="请输确认密码">
                     <span></span>
                 </li>
                 <li class="ad-er">
@@ -72,14 +74,14 @@
                         <img src="../images/login_error.png" alt="">
                     </h6>请输入确认密码
                 </li>
-                <li> 同意
-                    <input type="checkbox">
-                    <a href="">
+                <li class="check"> 同意
+                    <input type="checkbox" checked="checked">
+                    <a>
                         依谷网服务协议
                     </a>
                 </li>
-                <li>
-                    <a href="">完成</a>
+                <li class="complete">
+                    <a>完成</a>
                 </li>
             </ul>
         </form>

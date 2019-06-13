@@ -17,10 +17,16 @@ $(function () {
         let oSliderBoxLeft = 0;
         let oSliderBoxItemCount = oSliderBoxItem.length;
 
-        console.log(oSliderBoxItemCount);
+        if (oSliderBoxItemCount > 5) {
+            for (var i = 0; i < 5; i++) {
+                oSliderBox.append(oSliderBox.children("li").eq(i).clone());
+            }
+            oSliderBoxItemCount = oSliderBoxItemCount + 5;
+        }
+
 
         let oSliderBoxItemWidth = oSliderBoxItem.width() + 34;
-        console.log(oSliderBoxItemWidth);
+
 
 
         let switchSlider = (index) => {
@@ -32,13 +38,11 @@ $(function () {
 
 
         let next = () => {
-
             index++;
-            console.log(index);
             /*临界值检查*/
             if (index >= oSliderBoxItemCount - 4) {
-                index = 1;
-                oSliderBox.css("left", 0);
+                index = 5;
+                $(".slider-box").css("left", -4 * oSliderBoxItemWidth + "px");
             }
             oSliderBoxLeft = index * oSliderBoxItemWidth;
             oSliderBox.stop(true).animate({
@@ -49,14 +53,14 @@ $(function () {
         let prev = () => {
 
             index -= 1;
-            console.log(index);
+
 
             /*临界值检查*/
 
             if (index < 0) {
 
-                index = oSliderBoxItemCount - 5;
-                oSliderBox.css("left", (oSliderBoxItemCount) * oSliderBoxItemWidth);
+                index = oSliderBoxItemCount - 6;
+                oSliderBox.css("left", -(oSliderBoxItemCount - 5) * oSliderBoxItemWidth + "px");
             }
 
 
@@ -70,18 +74,6 @@ $(function () {
             timer = setInterval(next, 2000);
         }
 
-
-        /*01-设置标签样式*/
-        // oSliderBoxItem.each(function (i, ele) {
-        //     $(this).css("background", $.getRandomColor());
-
-        //     console.log(oSliderBoxItemCount, i);
-        //     if (i == oSliderBoxItemCount - 1) return false;
-        //     /*创建对应的图标并且插入到页面中*/
-        //     $(`<li class="slider-nav-item">${i + 1}</li>`).appendTo(oSliderNav);
-        //     $(".slider-nav-item").first().addClass("active");
-        // })
-
         /*02-设置自动播放*/
         autoPlay();
 
@@ -92,14 +84,5 @@ $(function () {
         oNext.click(next);
         oPrev.click(prev)
 
-        /*05-鼠标移入小图标的时候显示对应的滑块*/
-        // $(".slider-nav-item").mouseenter(function () {
-        //     var index = $(this).index();
-        //     oSliderBoxLeft = index * oSliderBoxItemWidth;
-        //     oSliderBox.stop(true).animate({
-        //         "left": -oSliderBoxLeft + "px"
-        //     });
-        //     switchSlider(index);
-        // })
     })
 })

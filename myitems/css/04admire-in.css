@@ -168,9 +168,12 @@ form {
     height: 52px;
     top: 0px;
     left: 300px;
-    background-image: url(../images/checkimage\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #c9c9c9;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    font-size: 30px;
+    line-height: 52px;
+    text-align: center;
 }
 
 h6 img {
