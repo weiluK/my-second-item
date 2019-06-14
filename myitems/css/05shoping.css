@@ -36,7 +36,7 @@ em {
 
 .content {
     width: 1198px;
-    height: 100%;
+    /* height: 100%; */
     /* background-color: tan; */
     margin: 0 auto;
 
@@ -48,6 +48,7 @@ em {
 
 .car-box {
     margin-bottom: 40px;
+    /* overflow: hidden; */
 }
 
 .car-box>.content {
@@ -399,6 +400,8 @@ em {
 
 .cart-nr {
     float: left;
+    /* overflow: hidden; */
+    /* height: 71px; */
     width: 1206px;
     border-bottom: 1px #e0e0e0 solid;
 }

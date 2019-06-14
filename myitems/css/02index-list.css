@@ -171,25 +171,35 @@ em {
     color: #666666;
 }
 
+.class-selec {
+    overflow: hidden;
+}
+
 .class-selec>ul {
     /* height: 35px; */
-    /* width: 1221px; */
+    width: 1221px;
     overflow: hidden;
     border-bottom: 1px dotted #b3b3b3;
 }
 
-.class-selec>ul ul {
+.class-selec>u>ul {
     /* height: 35px; */
     width: 1221px;
     overflow: hidden;
     display: none;
+
+}
+
+.class-selec>ul div {
+    display: block;
+    overflow: hidden;
 }
 
 .class-selec>ul ul {
     height: 35px;
-    width: 1221px;
+    /* width: 1221px; */
     margin-left: 203.49px;
-
+    display: block;
 }
 
 
@@ -325,7 +335,10 @@ em {
     margin-bottom: 10px;
 }
 
-
+div.Spinner {
+    overflow: hidden;
+    display: inline;
+}
 
 .cp-list-ul-li-sel .price {
     text-align: left;

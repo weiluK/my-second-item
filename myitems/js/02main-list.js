@@ -1,4 +1,18 @@
 $(function () {
+
+
+    let n = 1;
+    let dataAll = [];
+
+    let shopcount = JSON.parse(window.localStorage.getItem("shopListCount"));
+    let shopData = JSON.parse(window.localStorage.getItem("shopListData"));
+    let arrData = shopData ? shopData : [];
+    let arrcount = shopcount ? shopcount : [];
+
+
+
+
+
     $(".ttop-list ul li").hover(function () {
         let index = $(this).index();
 
@@ -30,7 +44,7 @@ $(function () {
 
             let data1 = JSON.parse(data);
             // console.log(data1[0]);
-
+            dataAll = data1;
             dataL(data1)
         }
 
@@ -42,7 +56,7 @@ $(function () {
         for (const key in data) {
 
 
-            res = ` <li class="cp-list-ul-li-sel">
+            res = `<li class="cp-list-ul-li-sel">
                 <span class="img"><a href=""><img
                             src="${data[key].src}"
                             width="250px"></a></span>
@@ -65,7 +79,7 @@ $(function () {
                         <a class="Increase"><i>+</i></a>
                     </div>
 
-                    <a class="bth-jrshop" href="">加入购物车</a>
+                    <a class="bth-jrshop">加入购物车</a>
 
                 </div>
             </li>`;
@@ -86,6 +100,68 @@ $(function () {
     })
 
 
+    // console.log(arrData);
+    // console.log(arrcount);
+    $(".shangpin-list ul").on("click", ".Spinner a,.bth-jrshop", function () {
+
+        let indexOfLi = $(this).parent().parent().parent().index();
+        // console.log(dataAll);
+        let num = $(".shangpin-list ul ").children("li").eq(indexOfLi).children("div").children(".Spinner").children("input").val();
+        // console.log(nnp);
+
+
+        if ($(this).text() == "加入购物车") {
+            let indexSHOP = $(this).parent().parent().index();
+            let countList = $(this).prev().children("input").val() * 1;
+
+            if (getIndex(arrData, dataAll, indexSHOP) == -1) {
+                arrData.push(dataAll[indexSHOP]);
+                arrcount.push(countList);
+                window.localStorage.setItem("shopListData", JSON.stringify(arrData));
+                window.localStorage.setItem("shopListCount", JSON.stringify(arrcount));
+
+
+            } else {
+
+                arrcount[getIndex(arrData, dataAll, indexSHOP)] += countList;
+                window.localStorage.setItem("shopListCount", JSON.stringify(arrcount));
+            }
+
+
+        } else if ($(this).children("i").text() == "+") {
+            num++;
+            $(this).prev().val(num);
+        } else if ($(this).children("i").text() == "-") {
+            num--;
+            if (num <= 1) {
+                num = 1;
+            }
+            $(this).next().val(num);
+        }
+
+
+    })
+
+    // 去重以及获取索引
+    function getIndex(arrData, dataAll, indexSHOP) {
+
+        let arrDA = [];
+        if (arrData.length > 0) {
+            for (var h = 0; h < arrData.length; h++) {
+                arrDA.push(JSON.stringify(arrData[h]))
+            };
+            let index = arrDA.indexOf(JSON.stringify(dataAll[indexSHOP]));
+            if (index == -1) {
+                return -1;
+            } else {
+                return index;
+            }
+
+        } else {
+            return -1;
+        }
+
+    }
 
 
 

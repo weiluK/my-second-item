@@ -21,7 +21,7 @@ $data1 = array(
     ),
     "3"=>array(
         "title"=>"泰国进口椰青1个装",
-        "price"=>" ￥15.8  ",
+        "price"=>" ￥15.8",
         "ms01"=>" 赠送吸管 清香四溢 唇齿流香 喝",
         "src"=>"http://oss.egu365.com/upload/1551lWQ8j6aY81n42Ib5rE08.jpg"
     ),

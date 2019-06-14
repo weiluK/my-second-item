@@ -205,5 +205,22 @@ $(function () {
 
     })
 
+    $(".top-search form").on("click", "span", function () {
+        console.log(this);
+        let searchTextLen = $(this).prev().val().trim();
+        if (searchTextLen.length <= 0) {
+            window.location.href = "06main-xiangqing.1.html";
+        } else {
+            alert("抱歉！ 其他商品正在上架中。");
+        }
+    })
+
+
+    $(".my-car").on("click", "span", function () {
+        // console.log(this);
+        window.location.href = "05shoping.html";
+    })
+
+
 
 })
