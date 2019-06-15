@@ -87,6 +87,9 @@ $(function () {
 
 
         }
+
+
+
     }
 
 
@@ -127,6 +130,17 @@ $(function () {
                 window.localStorage.setItem("shopListCount", JSON.stringify(arrcount));
             }
 
+            (function count() {
+                let counumber = 0;
+                let shopcount = JSON.parse(window.localStorage.getItem("shopListCount"));
+
+                for (var i = 0; i < shopcount.length; i++) {
+
+                    counumber += shopcount[i] * 1;
+                }
+
+                $(".shopcar").children("span").eq(1).html(counumber);
+            })();
 
         } else if ($(this).children("i").text() == "+") {
             num++;
@@ -142,7 +156,7 @@ $(function () {
 
     })
 
-    // 去重以及获取索引
+    // 去重以及获取索引;
     function getIndex(arrData, dataAll, indexSHOP) {
 
         let arrDA = [];

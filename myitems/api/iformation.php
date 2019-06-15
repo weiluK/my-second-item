@@ -8,8 +8,6 @@ $res=true;
 
 $filePath = "information.json";
 
-      
-
         // 获取JSON数据
 
      $content=fread(fopen($filePath,"r"),filesize($filePath));
